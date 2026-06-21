@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>念枢 · Idea Nexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=6" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <canvas id="graph-canvas"></canvas>
+
+  <header class="hud">
+    <div class="hud-title">
+      <h1 id="meta-title">念枢</h1>
+    </div>
+    <div class="hud-stats">
+      <div class="stat">
+        <span class="stat-dot shipped"></span>
+        <span id="count-shipped">0</span>
+        <span class="stat-label" id="label-shipped">已落地</span>
+      </div>
+      <div class="stat">
+        <span class="stat-dot partial"></span>
+        <span id="count-partial">0</span>
+        <span class="stat-label" id="label-partial">做了一半</span>
+      </div>
+      <div class="stat">
+        <span class="stat-dot pending"></span>
+        <span id="count-pending">0</span>
+        <span class="stat-label" id="label-pending">尚待时间</span>
+      </div>
+    </div>
+    <div class="hud-controls">
+      <button id="btn-lang" class="hud-btn lang-btn" title="Switch language">EN</button>
+      <button id="btn-reset" class="hud-btn" title="Reset">⟲</button>
+      <button id="btn-toggle-layout" class="hud-btn" title="Layout">◎</button>
+    </div>
+  </header>
+
+  <aside id="detail-panel" class="detail-panel hidden">
+    <button id="close-panel" class="close-btn" aria-label="Close">×</button>
+    <div class="panel-glow"></div>
+    <span id="panel-category" class="panel-category hidden"></span>
+    <span id="panel-status" class="panel-status"></span>
+    <h2 id="panel-title"></h2>
+    <p id="panel-desc"></p>
+    <div id="panel-links" class="panel-links"></div>
+  </aside>
+
+  <div id="tooltip" class="tooltip hidden">
+    <span id="tooltip-category" class="tooltip-category hidden"></span>
+    <span id="tooltip-status" class="tooltip-status"></span>
+    <strong id="tooltip-title"></strong>
+    <p id="tooltip-desc"></p>
+  </div>
+
+  <script src="app.js?v=10"></script>
+</body>
+</html>

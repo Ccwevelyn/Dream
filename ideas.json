@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "title": "念枢",
+    "titleEn": "Idea Nexus"
+  },
+  "ui": {
+    "shipped": { "zh": "已落地", "en": "Shipped" },
+    "partial": { "zh": "做了一半", "en": "Half-done" },
+    "pending": { "zh": "尚待时间", "en": "Awaiting time" },
+    "coreHub": { "zh": "Dream", "en": "Dream" },
+    "techHub": { "zh": "技术", "en": "Tech" },
+    "reset": { "zh": "重置视图", "en": "Reset view" },
+    "layout": { "zh": "切换布局", "en": "Toggle layout" },
+    "close": { "zh": "关闭", "en": "Close" },
+    "lang": { "zh": "切换英文", "en": "Switch to Chinese" }
+  },
+  "technologies": {
+    "llm": {
+      "label": "大模型 · Agent",
+      "labelEn": "LLM · Agent",
+      "ringLabel": "LLM·Agent",
+      "ringLabelEn": "LLM",
+      "description": "LLM · 多智能体 · RAG · persona 蒸馏 · AI 出图与 Agent 研究",
+      "descriptionEn": "LLM · multi-agent · RAG · persona distillation · gen AI & agent research",
+      "color": "#5cafff"
+    },
+    "web": {
+      "label": "终端 · Web",
+      "labelEn": "Terminal · Web",
+      "description": "TUI / GUI 终端、网页、小程序、可视化前端",
+      "descriptionEn": "TUI / GUI terminal, web pages, mini-apps, visual front-ends",
+      "color": "#7b8cff"
+    },
+    "sensing": {
+      "label": "传感硬件",
+      "labelEn": "Sensor HW",
+      "description": "Arduino + MQ / 脉搏 / 姿态 / 按键 / 脚踏 / 环境传感",
+      "descriptionEn": "Arduino + MQ, pulse, posture, buttons, pedals, env sensors",
+      "color": "#2ec4b6"
+    },
+    "touchdesigner": {
+      "label": "TouchDesigner",
+      "labelEn": "TouchDesigner",
+      "ringLabel": "TD",
+      "ringLabelEn": "TD",
+      "description": "TD 实时视觉、水墨、音频驱动粒子等",
+      "descriptionEn": "TD real-time visuals, ink, audio-driven particles",
+      "color": "#b388ff"
+    },
+    "embodied": {
+      "label": "具身交互",
+      "labelEn": "Embodied",
+      "description": "香氛、按键、脚踏、VR / 全息、身体在场的物理交互",
+      "descriptionEn": "Scent, buttons, pedals, VR / hologram — body-on-site interaction",
+      "color": "#ff9f1c"
+    },
+    "affective": {
+      "label": "情绪感知",
+      "labelEn": "Affect",
+      "description": "传感推测情绪与状态，提前反馈、香氛与陪伴疗愈",
+      "descriptionEn": "Sensors infer mood & state — early feedback, scent & companion care",
+      "color": "#c77dff"
+    }
+  },
+  "ideas": [
+    {
+      "id": "dream",
+      "title": "Dream",
+      "titleEn": "Dream",
+      "description": "所有想法的原点",
+      "descriptionEn": "Origin of all ideas",
+      "isRoot": true
+    },
+    {
+      "id": "parallel-goodbye",
+      "title": "在平行时空再见",
+      "titleEn": "Parallel Timeline Goodbye",
+      "shortTitle": "平行时空",
+      "shortTitleEn": "Parallel",
+      "description": "LLM 蒸馏 persona：13 位群友 + 个人分身；观/改模式、RAG。古风页已完成；语音模拟自己声音偏贵，未落地",
+      "descriptionEn": "LLM persona distillation: 13 friends + personal twin; observe/rewrite, RAG. UI done; voice clone too costly — not yet",
+      "status": "partial",
+      "tech": ["llm", "web"]
+    },
+    {
+      "id": "my-plan",
+      "title": "My Plan",
+      "titleEn": "My Plan",
+      "shortTitle": "My Plan",
+      "shortTitleEn": "My Plan",
+      "description": "日历 + LLM 主动提问式规划，选项按钮减少反复补充",
+      "descriptionEn": "Calendar + LLM proactive planning with option chips",
+      "status": "shipped",
+      "tech": ["llm", "web"]
+    },
+    {
+      "id": "eat-what",
+      "title": "今天吃啥",
+      "titleEn": "Eat What",
+      "shortTitle": "今天吃啥",
+      "shortTitleEn": "Eat What",
+      "description": "高德周边 + 随机/转盘选餐厅，App 已上线",
+      "descriptionEn": "Amap nearby + random/spinner pick, app shipped",
+      "status": "shipped",
+      "tech": ["web"]
+    },
+    {
+      "id": "english-learn",
+      "title": "英语学习 App",
+      "titleEn": "English Learning App",
+      "shortTitle": "学英语",
+      "shortTitleEn": "English",
+      "description": "图像识别 · 拍到哪儿学哪儿，已完成并上传 GitHub",
+      "descriptionEn": "Image recognition — snap a scene, learn English; shipped on GitHub",
+      "status": "shipped",
+      "tech": ["llm", "web"]
+    },
+    {
+      "id": "sdt-engine",
+      "title": "SDT-Engine",
+      "titleEn": "SDT-Engine",
+      "shortTitle": "SDT",
+      "shortTitleEn": "SDT",
+      "description": "中文多智能体 1×3 辩论树 + Agent C + Hybrid RAG，EMNLP Industry，已部署",
+      "descriptionEn": "Chinese 1×3 debate tree + Agent C + Hybrid RAG, EMNLP Industry, deployed",
+      "status": "shipped",
+      "tech": ["llm"]
+    },
+    {
+      "id": "speechmix-rag",
+      "title": "发言稿 RAG · 问答混淆",
+      "titleEn": "SpeechMix-RAG",
+      "shortTitle": "发言稿RAG",
+      "shortTitleEn": "SpeechMix",
+      "description": "基于 SDT 辩论树；发言稿 Q/A 同库检索混淆 → 乱编，debate tree 检索后验证抑制错引",
+      "descriptionEn": "Built on SDT debate tree; press Q/A RAG confusion — post-retrieval debate verifies sources",
+      "status": "shipped",
+      "tech": ["llm"],
+      "basedOn": ["sdt-engine"]
+    },
+    {
+      "id": "cui-site",
+      "title": "TUI 终端",
+      "titleEn": "TUI Terminal",
+      "shortTitle": "TUI",
+      "shortTitleEn": "TUI",
+      "description": "TUI 终端风个人主页",
+      "descriptionEn": "Personal homepage in TUI terminal style",
+      "status": "shipped",
+      "tech": ["web"]
+    },
+    {
+      "id": "cc-skill",
+      "title": "CC Skill",
+      "titleEn": "CC Skill",
+      "shortTitle": "CC Skill",
+      "shortTitleEn": "CC",
+      "description": "dot skill 蒸馏自己的语言习惯；在 TUI 终端上可文字对话",
+      "descriptionEn": "dot skill distills my speech habits; text chat on TUI terminal",
+      "status": "shipped",
+      "tech": ["llm", "web"]
+    },
+    {
+      "id": "ai-bias-say-think",
+      "title": "AI 偏见与言思",
+      "titleEn": "AI Bias & Say vs Think",
+      "shortTitle": "偏见言思",
+      "shortTitleEn": "Bias·Say",
+      "description": "Agent 性别/性格偏见对比可视化，已完成；AI 说的 vs 想的、口述 vs 共建网站看差异，做了一半",
+      "descriptionEn": "Agent gender/trait bias viz — shipped; say vs think, tell vs co-build site — half-done",
+      "status": "partial",
+      "tech": ["llm", "web"]
+    },
+    {
+      "id": "holo-grief-companion",
+      "title": "全息情感陪伴",
+      "titleEn": "Holographic Grief Companion",
+      "shortTitle": "全息陪伴",
+      "shortTitleEn": "Holo",
+      "description": "亲人离世后：全息投影 + 情绪感知，为失去挚爱的人提供情绪支持",
+      "descriptionEn": "After losing someone: hologram + emotion sensing for grief support",
+      "status": "pending",
+      "tech": ["embodied", "sensing", "llm", "affective"]
+    },
+    {
+      "id": "elder-walk-assist",
+      "title": "老年助行防摔鞋",
+      "titleEn": "Elder Anti-Fall Shoes",
+      "shortTitle": "防摔鞋",
+      "shortTitleEn": "Shoes",
+      "description": "老人走路不稳、要摔时，鞋提前感知并拉回来辅助行走",
+      "descriptionEn": "When elders stumble, shoes sense it early and pull back to assist walking",
+      "status": "pending",
+      "tech": ["sensing", "embodied"]
+    },
+    {
+      "id": "fitness-muscle-sensor",
+      "title": "健身 · 肌群矫正",
+      "titleEn": "Fitness Muscle Correction",
+      "shortTitle": "健身矫正",
+      "shortTitleEn": "Fitness",
+      "description": "可穿戴 sensor 感知发力，矫正肌肉群",
+      "descriptionEn": "Wearable sensors read force & posture to correct muscle groups",
+      "status": "pending",
+      "tech": ["sensing", "embodied"]
+    },
+    {
+      "id": "solo-women-defense-bot",
+      "title": "独居女性 · 随身防身",
+      "titleEn": "Solo Women Defense Bot",
+      "shortTitle": "防身机器人",
+      "shortTitleEn": "Defense",
+      "description": "独居女性随身防身机器人；传感感知风险、提前防范",
+      "descriptionEn": "Portable self-defense bot for solo women — senses risk, early alert",
+      "status": "pending",
+      "tech": ["sensing", "embodied"]
+    },
+    {
+      "id": "tcm-acupoint",
+      "title": "中医穴位",
+      "titleEn": "TCM Acupoints",
+      "shortTitle": "中医穴位",
+      "shortTitleEn": "TCM",
+      "description": "传感读脉搏与状态 → 比人先察觉心情/身体异样 → 气味辅助穴位脉冲疗愈",
+      "descriptionEn": "Sensors read pulse & state → detect mood/body shift before you do → scent-assisted acupoint pulse therapy",
+      "status": "pending",
+      "tech": ["sensing", "embodied", "affective"]
+    },
+    {
+      "id": "ambient-scent",
+      "title": "环境感知香水",
+      "titleEn": "Ambient Scent",
+      "shortTitle": "环境香水",
+      "shortTitleEn": "Scent",
+      "description": "传感环境 + 社交场景；实时 App 调需求 → 环绕式投香（阴天扩散慢则少喷）",
+      "descriptionEn": "Sense environment & social context; realtime app adjusts needs → surround scent (less on slow-diffusion days)",
+      "status": "partial",
+      "tech": ["sensing", "embodied", "web", "affective"]
+    },
+    {
+      "id": "her-four-realms",
+      "title": "她者四境",
+      "titleEn": "Her Four Realms",
+      "shortTitle": "她者四境",
+      "shortTitleEn": "Realms",
+      "description": "女性叙事：嗅香传感 → TD 水墨；AI 生花图。葛/牡丹/荻/艾蒿四境，部分完成",
+      "descriptionEn": "Female narrative: scent sensing → TD ink; AI flower images. Four realms, partly done",
+      "status": "partial",
+      "tech": ["touchdesigner", "sensing", "llm", "embodied"]
+    },
+    {
+      "id": "nail-page-turner",
+      "title": "美甲无手翻页",
+      "titleEn": "Hands-Free Page Turn",
+      "shortTitle": "美甲翻页",
+      "shortTitleEn": "Flip",
+      "description": "美甲时脚踏/按键 → 翻页",
+      "descriptionEn": "Foot pedal / button for page turn during manicure",
+      "status": "pending",
+      "tech": ["sensing", "embodied"]
+    },
+    {
+      "id": "chord-e-piano",
+      "title": "和弦电子钢琴",
+      "titleEn": "Chord E-Piano",
+      "shortTitle": "和弦琴",
+      "shortTitleEn": "Chords",
+      "description": "谱面和弦提炼 → 简化电子琴按键",
+      "descriptionEn": "Chord extraction from score → simplified keys",
+      "status": "pending",
+      "tech": ["embodied", "llm"]
+    },
+    {
+      "id": "love-unsaid",
+      "title": "未说出口的爱",
+      "titleEn": "Love Unsaid",
+      "shortTitle": "未言之爱",
+      "shortTitleEn": "Unsaid",
+      "description": "多语爱心 + 手语 + TD 未言之语，已完成",
+      "descriptionEn": "Multilingual heart + sign language + TD unsaid words — shipped",
+      "status": "shipped",
+      "tech": ["web"]
+    },
+    {
+      "id": "night-blind-vr-guide",
+      "title": "夜盲症 · 感官引路",
+      "titleEn": "Night-Blind Sensory Guide",
+      "shortTitle": "夜盲引路",
+      "shortTitleEn": "Night",
+      "description": "夜盲症看不见 → VR 在前方铺出可走的引路线",
+      "descriptionEn": "Can't see at night — VR lays a walkable guidance path ahead",
+      "status": "pending",
+      "tech": ["embodied"]
+    },
+    {
+      "id": "scar-resonance",
+      "title": "Scar Resonance",
+      "titleEn": "Scar Resonance",
+      "shortTitle": "疤痕体",
+      "shortTitleEn": "Scar",
+      "description": "《疤痕体》音频感应 → TD 粒子随音乐波动，已完成",
+      "descriptionEn": "Scar Body — audio-reactive TD particle waves, shipped",
+      "status": "shipped",
+      "tech": ["touchdesigner"]
+    },
+    {
+      "id": "idea-nexus",
+      "title": "念枢星图",
+      "titleEn": "Idea Nexus Map",
+      "shortTitle": "念枢",
+      "shortTitleEn": "Nexus",
+      "description": "本页：Dream + 技术 + 项目连接",
+      "descriptionEn": "This map: Dream + tech + project links",
+      "status": "shipped",
+      "tech": ["web"]
+    }
+  ]
+}
